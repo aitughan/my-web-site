@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tariffs</title>
+    <!--<link rel="stylesheet" type="text/css" href="atletiweb.css">-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script type="text/javascript" src="atletiweb.js"></script>
+    <style>
+        body{
+            background: skyblue;
+        }
+        .adad:hover{
+            background: #eec954;
+        }
+        .list-group-item:hover{
+            background: greenyellow;
+        }
+        @media (hover:hover) {
+            input:hover {
+                background: yellow;
+
+            }
+        }
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+
+        input[class=aitu] {
+            -moz-appearance:textfield;
+        }
+        input[class=cvv] {
+            -webkit-text-security: disc;
+        }
+        .aitu{
+            width: 450px;
+            height: 100px;
+            font-size: 50px;
+        }
+        .cvv{
+            width: 450px;
+            height: 100px;
+            font-size: 50px;
+        }
+        .card{
+            width: 450px;
+            height: 100px;
+            font-size: 50px;
+        }
+        .mobnum{
+            width: 450px;
+            height: 100px;
+            font-size: 50px;
+        }
+        .money1{
+            width: 450px;
+            height: 100px;
+            font-size: 50px;
+        }
+    </style>
+</head>
+<body style="background: white">
+<br>
+<br>
+<br>
+
+<h1 style="font-size: 30px;text-align: center">Enter your number</h1>
+
+
+
+<div class="container">
+    <form align="center">
+        <br>
+        <br>
+        <p><input class="mobnum" type="text" id="phone" maxlength="12"  placeholder="+7 7** ***  " oninput="getnumber(this.value)" pattern="" required></p>
+    </form>
+
+</div>
+<div align="center">
+    <div >
+        <div >
+            <div ><img width="300px" height="100px" src="tele.png" alt="tele2" id="tele2" style="display: none"></div>
+            <div ><img width="300px" height="100px" src="activ.png" alt="activ" id="activ" style="display: none"></div>
+
+            <div ><img width="300px" height="100px" src="beeline.jpg" alt="beeline" id="beeline" style="display: none"></div>
+        </div>
+    </div>
+
+</div>
+<br>
+<br>
+<br>
+<br><br>
+<br>
+<br>
+
+
+<div class="payment">
+
+        <form>
+        <div style="width: 100%;display:flex;flex-direction: row;justify-content: space-around;">
+            <div style="width: 50%;display:flex;flex-direction: column;justify-content: center;">
+                <h3 style="font-size: 50px">
+                    Number of card</h3>
+
+                <input class="aitu" type="number" onkeypress="this.value=this.value.substring(0,15);" placeholder="**** **** **** ****" required />
+
+                <h3 style="font-size: 50px"> Card expiration date </h3>
+
+                <input class="card" type="tel0" maxlength="" placeholder="**/**" required>
+            </div>
+            <div style="width: 50%;display:flex;flex-direction: column;justify-content: center;">
+                <h3 style="font-size: 50px">
+                    Enter your CVV code
+                </h3>
+
+                <input class="cvv"   type="number" onkeypress="this.value=this.value.substring(0,3);" placeholder="****"   required />
+
+                <h3 style="font-size: 50px">
+                    Card user name
+                </h3>
+
+                <input class="card" type="text"  placeholder="LastName FirstName" required >
+
+            </div>
+        </div>
+            <br>
+            <br>
+            <br>
+
+
+        </form></div>
+
+<div style="text-align: center">
+    <h3 style="font-size: 30px">Entre your coins</h3>
+    <div id="rush">
+        <form>
+        <p>
+    <input type="number" pattern="^[ 0-9]+$"  required id="myText" class="money1" >
+        </p>
+            <p>
+
+    <button onclick="aqsha('myText(this.value)')" type="button" style="font-size: 40px;height: 60px;width: 200px;background: #00A400">Donate</button>
+            </p>       </form>
+    </div>
+        <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p id="demo" style="font-size: 60px"></p>
+<br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</div>
+<div style="display:flex;flex-wrap: wrap;font-size: 25px;padding: 100px;justify-content: space-between;flex-grow: <number>;">
+<div id="tele2_1" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="tele.png" class="card-img-top" alt="tele2">
+    <div class="adad">
+        <h5 class="adad">TELE 2</h5>
+        <p class="adad">Change everything for 1390tg</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item" >5 GB</li>
+        <li class="list-group-item">100 SMS</li>
+        <li class="list-group-item">50 min</li>
+    </ul>
+    <div class="adad">
+        <a href="https://tele2.kz/tariffs/main" class="adad">Tariff link</a>
+        <a href="tele2.kz" class="card-link">Tele 2</a>
+    </div>
+</div></div>
+<div id="tele2_2" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="tele.png" class="card-img-top" alt="tele2">
+    <div class="card-body">
+        <h5 class="card-title">TELE 2</h5>
+        <p class="card-text">Change everything for 1890tg</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">10 GB</li>
+        <li class="list-group-item">100 SMS</li>
+        <li class="list-group-item">80 min</li>
+    </ul>
+    <div class="card-body">
+        <a href="https://tele2.kz/tariffs/main" class="card-link">Tariff link</a>
+        <a href="tele2.kz" class="card-link">TELE 2</a>
+    </div>
+</div></div>
+<div id="tele2_3" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="tele.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">TELE 2</h5>
+        <p class="card-text">Change everything for 2590 tg</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">20 GB</li>
+        <li class="list-group-item">100 SMS</li>
+        <li class="list-group-item">180min</li>
+    </ul>
+    <div class="card-body">
+        <a href="https://tele2.kz/tariffs/main" class="">Tariff link</a>
+        <a href="tele2.kz" class="card-link">Another link</a>
+    </div>
+</div></div>
+<div id="activ_1" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="activ.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">ACTIV</h5>
+        <p class="card-text">Super comfort XS for 1390 tg</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">4 GB</li>
+        <li class="list-group-item">unlimited minutes Activ/Kcell</li>
+        <li class="list-group-item">40 min</li>
+    </ul>
+    <div class="card-body">
+        <a href="https://activ.kz/ru/product/super-comfort" class="">Tariff link</a>
+        <a href="activ.kz" class="card-link">Activ</a>
+    </div>
+</div></div>
+<div id="activ_2" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="activ.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">ACTIV</h5>
+        <p class="card-text">Super comfort S for 1890 tg </p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">8 GB</li>
+        <li class="list-group-item">unlimited minutes Activ/Kcell</li>
+        <li class="list-group-item">80 min</li>
+    </ul>
+    <div class="card-body">
+        <a href="https://activ.kz/ru/product/super-comfort" class="">Tariff link</a>
+        <a href="activ.kz" class="card-link">Activ</a>
+    </div>
+</div></div>
+<div id="activ_3" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="activ.png" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">ACTIV</h5>
+        <p class="card-text">Super comfort M for 2590 tg</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">12 GB</li>
+        <li class="list-group-item">unlimited minutes Activ/Kcell</li>
+        <li class="list-group-item">120 min</li>
+    </ul>
+    <div class="card-body">
+        <a href="https://activ.kz/ru/product/super-comfort" class="">Tariff link</a>
+        <a href="https://activ.kz" class="activ.kz">activ</a>
+    </div>
+</div></div>
+<div id="beeline_1" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="beeline.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">BEELINE</h5>
+        <p class="card-text">Bright for 1390 tg</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">5 GB</li>
+        <li class="list-group-item">Call to Beeline unlimited </li>
+        <li class="list-group-item">50 min</li>
+    </ul>
+    <div class="card-body">
+        <a href="https://www.beeline.kz/akmolinskaya-obl/customers/mobile/tariffs-2#/" class="">Tariff link</a>
+        <a href="https://www.beeline.kz" class="card-link">Beeline</a>
+    </div>
+</div></div>
+<div id="beeline_2" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="beeline.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Beeline</h5>
+        <p class="card-text">Bright for 1890 tg</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">8 GB</li>
+        <li class="list-group-item">Call to Beeline unlimited</li>
+        <li class="list-group-item">80 min</li>
+    </ul>
+    <div class="card-body">
+        <a href="https://www.beeline.kz/akmolinskaya-obl/customers/mobile/tariffs-2#/" class="">Tariff link </a>
+        <a href="#https://www.beeline.kz" class="card-link">Beeline</a>
+    </div>
+</div></div>
+
+<div id="beeline_3" style="display: none">   <div class="adad" style="width: 18rem;">
+    <img src="beeline.jpg" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">Beeline</h5>
+        <p class="card-text">Bright for 2590 tg</p>
+    </div>
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item">12 GB</li>
+        <li class="list-group-item">All social medias unlimited </li>
+        <li class="list-group-item">120 min</li>
+    </ul>
+    <div class="card-body">
+        <a href="https://www.beeline.kz/akmolinskaya-obl/customers/mobile/tariffs-2#/" class="">Tariff link</a>
+        <a href="https://www.beeline.kz" class="card-link">Beeline</a>
+    </div>
+</div></div>
+
+</div>
+
+        <br>
+        <br>
+
+
+
+</body>
+</html>
